@@ -30,7 +30,7 @@ app.use(function(req, res, next) {
 app.get('/',function(req,res){
 	
     var params = {
-        Bucket: 'bucket_study'
+        Bucket: 'bucket-study'
     };
     s3.createBucket(params, function(err, data) {
         if (err) {
