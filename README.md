@@ -1,2 +1,2 @@
-# cloudninja-s3
+# Study-s3
 Repositório usado no curso preparatório para certificação AWS Developer Associate

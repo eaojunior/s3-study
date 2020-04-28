@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
 app.get('/',function(req,res){
 	
     var params = {
-        Bucket: 'cloudninja-jon'
+        Bucket: 's3-study'
     };
     s3.createBucket(params, function(err, data) {
         if (err) {
