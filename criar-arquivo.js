@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 // AWS
-var s3 = new AWS.S3();
+var s3 = new AWS.S3({apiVersion: '2006-03-01'});
 
 // Configuração da requisição, cabeçalhos, etc. CORS
 app.use(function(req, res, next) {
