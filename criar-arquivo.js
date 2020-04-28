@@ -26,7 +26,7 @@ app.use(function(req, res, next) {
 // GET
 app.get('/',function(req,res){
 	
-    var dstBucket = 's3-study';
+    var dstBucket = 'study';
     var dstKey = 'arquivo.txt';
     var arquivo = 'Parabéns Ninja, você completou com sucesso essa tarefa!';
 
