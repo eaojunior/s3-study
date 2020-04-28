@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-
+AWS.config.update({region: 'us-west-1'});
 // AWS
 var s3 = new AWS.S3({apiVersion: '2006-03-01'});
 
@@ -26,7 +26,7 @@ app.use(function(req, res, next) {
 // GET
 app.get('/',function(req,res){
 	
-    var dstBucket = 'bucket-study';
+    var dstBucket = 'bucketstudy';
     var dstKey = 'arquivo.txt';
     var arquivo = 'Parabéns Ninja, você completou com sucesso essa tarefa!';
 

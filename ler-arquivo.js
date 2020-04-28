@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-
+AWS.config.update({region: 'us-west-1'});
 // AWS
 var s3 = new AWS.S3({apiVersion: '2006-03-01'});
 
@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
 app.get('/',function(req,res){
 
     var params = {
-      Bucket: 'study', 
+      Bucket: 'bucketstudy', 
       Key: 'arquivo.txt'
     };
     s3.getObject(params, function(err, data) {
